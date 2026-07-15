@@ -9,7 +9,7 @@ Lambda memory stops paying for itself — in latency and in dollars.
 
 <img width="2400" height="2000" alt="image" src="https://github.com/user-attachments/assets/e508c79d-9491-46c7-944c-7a15b7699565" />
 
-Why this exists
+## Why this exists
 
 On AWS Lambda, memory is not just RAM — it is the dial that also allocates vCPU. AWS
 allocates CPU proportionally to configured memory, with one full vCPU at approximately
