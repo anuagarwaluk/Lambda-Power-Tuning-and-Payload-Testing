@@ -308,5 +308,6 @@ two seconds.
  
 *Built and measured by Anu Agarwal — [linkedin.com/in/agarwalanu](https://www.linkedin.com/in/agarwalanu)*
 
-<img width="412" height="39" alt="Screenshot 2026-07-15 at 17 56 30" src="https://github.com/user-attachments/assets/39ca565f-0e7c-4aef-891e-5958a5b48a07" />
+<img width="732" height="56" alt="image" src="https://github.com/user-attachments/assets/6d6d2775-4fcf-45af-a872-aa3b19b7db72" />
+
 
