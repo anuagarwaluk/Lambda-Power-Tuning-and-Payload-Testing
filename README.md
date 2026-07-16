@@ -325,6 +325,7 @@ The right Lambda configuration is not always the smallest or the largest. It is 
 4. **Both ends of the curve are traps.** 128 MB is neither fast nor cheap.
 5. **Measure the path, not just the function.** Power Tuning optimises the Lambda.
    Load testing shows what the caller actually experiences.
+
 ## Caveats and honest limits
  
 - One Postman run per memory size. The four results above 1024 MB (210/205/203/205 ms) sit
