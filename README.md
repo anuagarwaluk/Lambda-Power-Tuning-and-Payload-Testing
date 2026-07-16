@@ -169,24 +169,37 @@ The knee was not a coincidence. It is where the workload ran out of core to cons
 
 # 128 MB Benchmark Data
 <img width="680" height="951" alt="Screenshot 2026-07-15 at 17 36 37" src="https://github.com/user-attachments/assets/0ff33e26-be42-4d99-9362-8b511e7ffe3b" />
+<img width="1293" height="799" alt="128MB_Screenshot 2026-07-15 at 14 08 17" src="https://github.com/user-attachments/assets/253d609d-2a8a-4ae1-9452-c5fb7fac364d" />
+
 
 # 256 MB Benchmark Data
 <img width="669" height="945" alt="Screenshot 2026-07-15 at 17 37 09" src="https://github.com/user-attachments/assets/795f3d7f-71bb-4743-af10-c39b0527ba0b" />
+<img width="1296" height="941" alt="256MB Screenshot 2026-07-15 at 14 42 51" src="https://github.com/user-attachments/assets/2426052d-5ba7-403b-a3da-ab084341f0b7" />
+
 
 # 512 MB Benchmark Data
 <img width="674" height="954" alt="Screenshot 2026-07-15 at 17 37 43" src="https://github.com/user-attachments/assets/6fb6d3c3-4cc8-4ea1-96c6-754f50bd1e5f" />
+<img width="1305" height="954" alt="512MB_Screenshot 2026-07-15 at 14 56 21" src="https://github.com/user-attachments/assets/30c7edb3-9ba2-42b4-85fd-efd6618d69b8" />
 
 # 1024 MB Benchmark Data
 <img width="668" height="952" alt="Screenshot 2026-07-15 at 17 38 15" src="https://github.com/user-attachments/assets/7a0c9663-3860-46ec-ba21-4d7ceab93b79" />
+<img width="1293" height="924" alt="1024MB_Screenshot 2026-07-15 at 15 01 54" src="https://github.com/user-attachments/assets/d6908ca0-8342-460a-bbba-377ca9108c7f" />
+
 
 # 1536 MB Benchmark Data
 <img width="666" height="942" alt="Screenshot 2026-07-15 at 17 38 49" src="https://github.com/user-attachments/assets/6741ef6c-7666-4e9b-8dc3-6a202324deab" />
+<img width="1316" height="954" alt="1536MB_Screenshot 2026-07-15 at 17 05 38" src="https://github.com/user-attachments/assets/a62e3368-4b2c-4b65-8374-5a95e5032979" />
+
 
 # 2048 MB Benchmark Data
 <img width="676" height="952" alt="Screenshot 2026-07-15 at 17 39 25" src="https://github.com/user-attachments/assets/fc7ea445-bbab-4b0a-89f0-1c9a953ee18c" />
+<img width="1308" height="1012" alt="2048MB_Screenshot 2026-07-15 at 14 01 13" src="https://github.com/user-attachments/assets/77f73406-ddc2-45b0-a1fe-ad566ccab82d" />
+
 
 # 3008 MB Benchmark Data
 <img width="675" height="951" alt="Screenshot 2026-07-15 at 17 39 46" src="https://github.com/user-attachments/assets/c5c4d1f0-76c0-4e7f-bec0-92b13172dccb" />
+<img width="1302" height="912" alt="3008MB_Screenshot 2026-07-15 at 15 09 20" src="https://github.com/user-attachments/assets/f57cfe5a-03b6-4794-bc14-737941bbd1db" />
+
 
 ---
  
