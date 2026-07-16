@@ -1,11 +1,28 @@
-# AWS Lambda-Power-Tuning-and-Payload-Testing
+AWS Lambda-Power-Tuning-and-Payload-Testing
 
-# Finding the Knee: Benchmarking AWS Lambda Memory from 128 MB to 3008 MB
+# Finding the Knee: AWS Lambda Memory Tuning from 128 MB to 3008 MB and API Load Testing
 
 
 A serverless microservice (API Gateway → Lambda → DynamoDB) load-tested at seven memory
-configurations, cross-referenced with AWS Lambda Power Tuning, to find where increasing
+configurations with Postman, cross-referenced with AWS Lambda Power Tuning, to find where increasing
 Lambda memory stops paying for itself — in latency and in dollars.
+
+The goal was to compare Lambda memory settings using two approaches:
+
+1. AWS Lambda Power Tuning for function-level cost and execution-time analysis.
+2. Postman load testing for end-to-end API performance validation through API Gateway, Lambda and DynamoDB.
+
+# Test Architecture
+
+The API Gateway endpoint invoked an AWS Lambda function that performed a DynamoDB-backed operation.
+
+The same payload was used across each test run:
+
+{
+  "operation": "list",
+  "tableName": "lambda-apigateway",
+  "payload": {}
+}
 
 <img width="2400" height="2000" alt="image" src="https://github.com/user-attachments/assets/e508c79d-9491-46c7-944c-7a15b7699565" />
 
