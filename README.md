@@ -12,6 +12,22 @@ The goal was to compare Lambda memory settings using two approaches:
 1. AWS Lambda Power Tuning for function-level cost and execution-time analysis.
 2. Postman load testing for end-to-end API performance validation through API Gateway, Lambda and DynamoDB.
 
+# Executive Summary
+
+The results show that Lambda memory is not only a memory setting. It is a performance and cost lever.
+
+Increasing memory can improve available compute power and reduce duration, but the relationship between memory, execution time, throughput and cost is not linear.
+
+The optimal Lambda memory setting depends on the business goal:
+
+| Goal | Candidate |
+|---|---|
+| Lowest function-level cost | 256 MB |
+| Fastest function-level execution | 1536 MB |
+| Best end-to-end API throughput in this test | 2048 MB |
+| Strong cost-performance balance candidate | 1024 MB |
+| Avoid due to poor cost-benefit in this test | 3008 MB |
+
 # Test Architecture
 
 The API Gateway endpoint invoked an AWS Lambda function that performed a DynamoDB-backed operation.
@@ -286,7 +302,17 @@ two seconds.
  
 ---
  
-## Conclusions
+## Conclusion
+
+Serverless removes server management, but it does not remove performance engineering.
+
+A Lambda function should not be sized by default, guesswork or intuition.
+
+It should be tuned using data.
+
+The right Lambda configuration is not always the smallest or the largest. It is the configuration that best aligns cost, latency, throughput, reliability and business priority.
+
+# Data Points
  
 1. **The knee is around 1024 MB, and it is not arbitrary.** Single-threaded code saturates
    at one vCPU (1,769 MB). Below that, memory buys real speed.
@@ -312,6 +338,7 @@ two seconds.
   function would push the knee higher; a pure I/O-wait function would flatten it earlier.
 - Power Tuning durations (function-only) and Postman durations (end-to-end) measure
   different things and are not directly comparable — they are reported separately above.
+
 ## Reproducing this
  
 1. Deploy the serverless microservice (API Gateway → Lambda → DynamoDB).
