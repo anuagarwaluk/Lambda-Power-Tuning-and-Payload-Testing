@@ -20,13 +20,21 @@ Increasing memory can improve available compute power and reduce duration, but t
 
 The optimal Lambda memory setting depends on the business goal:
 
-| Goal | Candidate |
-|---|---|
-| Lowest function-level cost | 256 MB |
-| Fastest function-level execution | 1536 MB |
-| Best end-to-end API throughput in this test | 2048 MB |
-| Strong cost-performance balance candidate | 1024 MB |
-| Avoid due to poor cost-benefit in this test | 3008 MB |
+## Which memory size should you pick?
+
+| Goal | Candidate | Evidence (this test) |
+|---|---|---|
+| Lowest function-level cost | **256 MB** | $0.60 per 1M invocations — cheapest of seven |
+| Fastest function-level execution | **1536 MB** | 46 ms isolated invocation (Power Tuning) |
+| Best end-to-end API throughput | **2048 MB** | 34.93 req/s · 203 ms avg — but see note |
+| Lowest tail latency | **1536 MB** | P99 271 ms · slowest request 1,321 ms |
+| Strongest cost-performance balance | **1024 MB** | 210 ms for $0.87/M — 2.8× the speed of the cheapest at 1.46× the cost |
+| Avoid due to poor cost-benefit | **3008 MB** | $6.16/M (10.28×) for the same 205 ms as 1536 MB, with a 54% worse tail |
+
+> **Note on throughput.** This is a closed-loop test, so throughput is bound to latency
+> (effective concurrency held at ~7.1 across all seven runs). The 1024–3008 MB results
+> (210 / 205 / 203 / 205 ms) sit inside a 3.3% band — 2048 MB leads, but the gap is within
+> run-to-run variance. Treat this range as a plateau, not a ranking.
 
 # Test Architecture
 
